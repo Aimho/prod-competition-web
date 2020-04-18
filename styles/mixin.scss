@@ -1,0 +1,21 @@
+@mixin darkBtn($fontSize) {
+  background-color: #2d3a47;
+  color: #fff;
+  border-radius: 1px;
+  padding: 3px 6px;
+  height: fit-content;
+  font-weight: bolder;
+  font-size: $fontSize;
+  line-height: initial;
+}
+
+@mixin lightBtn($fontSize) {
+  background-color: #fff;
+  color: #000;
+  border-radius: 1px;
+  padding: 3px 6px;
+  height: fit-content;
+  font-weight: bolder;
+  font-size: $fontSize;
+  line-height: initial;
+}

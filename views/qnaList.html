@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>국민체력 영상공모전</title>
+
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body id="qna">
+    <nav class="gnb">
+      <div class="nav container gutter">
+        <div class="grid">
+          <img
+            class="logo"
+            src="../assets/images/spon_logo1.png"
+            alt="문화체육관광부"
+          />
+          <img class="logo" src="../assets/images/spon_logo2.png" alt="Kspo" />
+        </div>
+
+        <div class="grid">
+          <a class="btn" href="#">공모개요</a>
+          <a
+            class="btn dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >커뮤니티</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./noticeList.html">
+              <span>공지사항</span></a
+            >
+            <!-- [Todo] 임시로 아래버튼 클릭 시 비밀번호 모달 표시되도록 했습니다. -->
+            <a
+              class="dropdown-item"
+              href="#"
+              data-toggle="modal"
+              data-target="#contact"
+            >
+              <span>FAQ</span>
+            </a>
+            <a class="dropdown-item" href="/quaList.html">
+              <span>Q&A</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <img
+          src="../assets/images/main@2x.png"
+          alt="국민체력 100 집콕 운동 영상공모전"
+        />
+      </div>
+    </section>
+
+    <section class="container gutter content">
+      <div class="grid header">
+        <span class="title large">
+          Q&A
+        </span>
+
+        <div class="grid btn-group">
+          <!-- [Todo] 현재 선택된 dropdown item으로 노출 -->
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            제목
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">제목</a>
+          </div>
+          <!-- [Todo] 검색 input -->
+          <input type="text" />
+          <!-- [Todo] onSearch -->
+          <button class="btn-default">
+            검색하기
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container gutter">
+      <table class="table list">
+        <thead>
+          <tr>
+            <th scope="col">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">작성자</th>
+            <th scope="col">작성일</th>
+            <th scope="col">조회</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>일반인들도 쉽게 따라할 수 있는 운동인가</td>
+            <td>관리자</td>
+            <td>20.04.17</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>일반인들도 쉽게 따라할 수 있는 운동인가</td>
+            <td>관리자</td>
+            <td>20.04.17</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td>일반인들도 쉽게 따라할 수 있는 운동인가</td>
+            <td>관리자</td>
+            <td>20.04.17</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>4</td>
+            <td>일반인들도 쉽게 따라할 수 있는 운동인가</td>
+            <td>관리자</td>
+            <td>20.04.17</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="container gutter" style="text-align: right;">
+      <a href="./qnaCreate.html" class="btn" style="font-size: 12px;">글쓰기</a>
+    </section>
+
+    <!-- 문의사항 -->
+    <div
+      class="modal fade"
+      id="contact"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <form class="grid" style="justify-content: space-between;">
+              <h6>비밀번호</h6>
+              <div class="grid">
+                <input type="text" style="margin-right: 4px;" />
+                <button type="submit" class="btn btn-default">확인</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-header">
+            <img src="../assets/images/password-modal.png" alt="비밀번호" />
+            <h6 class="modal-title" id="contactLabel">
+              <b>비밀번호를 입력하여 주세요.</b> <br />
+              비밀번호가 일치하지 않으면 <br />
+              다음 단계로 넘어갈 수 없습니다.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

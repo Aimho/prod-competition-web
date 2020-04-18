@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>국민체력 영상공모전</title>
+
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+
+  <body id="notice">
+    <nav class="gnb">
+      <div class="nav container gutter">
+        <div class="grid">
+          <img
+            class="logo"
+            src="../assets/images/spon_logo1.png"
+            alt="문화체육관광부"
+          />
+          <img class="logo" src="../assets/images/spon_logo2.png" alt="Kspo" />
+        </div>
+
+        <div class="grid">
+          <a class="btn" href="#">공모개요</a>
+          <a
+            class="btn dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >커뮤니티</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./noticeList.html">
+              <span>공지사항</span></a
+            >
+            <a class="dropdown-item" href="./qnaList.html">
+              <span>FAQ</span>
+            </a>
+            <a class="dropdown-item" href="./qnaList.html">
+              <span>Q&A</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="main">
+      <div class="container">
+        <img
+          src="../assets/images/main@2x.png"
+          alt="국민체력 100 집콕 운동 영상공모전"
+        />
+      </div>
+    </section>
+
+    <section class="container gutter content">
+      <div class="grid header">
+        <span class="title large">
+          공지사항
+        </span>
+      </div>
+    </section>
+
+    <!-- [Todo] qna inputs -->
+    <section class="container gutter">
+      <table class="table list">
+        <tbody>
+          <tr>
+            <th>제목</th>
+            <td colspan="5"><input type="text" /></td>
+          </tr>
+          <tr class="edge">
+            <th>작성자</th>
+            <td>운영사무국</td>
+            <td>작성일</td>
+            <td>2020-04-25</td>
+            <td>조회</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>내용</th>
+            <td colspan="5"><textarea></textarea></td>
+          </tr>
+          <tr>
+            <th>첨부파일</th>
+            <td colspan="5"><input type="file" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="container gutter" style="text-align: center;">
+      <a href="#" class="btn" style="font-size: 12px;">목록</a>
+    </section>
+  </body>
+</html>
